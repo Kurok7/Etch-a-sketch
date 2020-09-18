@@ -1,0 +1,77 @@
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+    background: linear-gradient(to right, rgb(187, 187, 187), rgb(65, 59, 59));
+}
+  
+#buttons {
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem;
+    gap: 20px;
+}
+  
+p {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+}
+  
+#reset {
+    color: rgb(0, 0, 0);
+    border: 5px ridge silver;
+    width: 6em;
+    background: white;
+}
+  
+.black {
+    color: rgb(255, 255, 255);
+    border: 5px ridge silver;
+    width: 6em;
+    background: black;
+}
+  
+.rainbow {
+    color: rgba(255, 255, 255);
+    border: 5px ridge silver;
+    width: 6em;
+    background: repeating-linear-gradient(to right, rgb(31, 155, 209), rgb(191, 29, 29));
+}
+  
+.clear {
+    color: rgb(0, 0, 0);
+    border: 5px ridge silver;
+    width: 6em;
+}
+  
+#container {
+    display: grid;
+    grid-template-rows: repeat(var(--grid-rows), auto);
+    grid-template-columns: repeat(var(--grid-cols), auto);
+    width: fit-content;
+    margin-top: 2em;
+    /* background: linear-gradient(to right, rgb(187, 187, 187), rgb(65, 59, 59)); */
+    justify-content: center;
+    align-content: center;
+}
+    
+  .grid-item {
+    padding: 1em;
+    /* border: 1px solid black; */
+    text-align: center;
+    outline: 1px solid black;
+  
+}
+  
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    clear: both;
+    font-size: x-large;
+    font-style: italic;
+    color: gold;
+ 
+}
+  
